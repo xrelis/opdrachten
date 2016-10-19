@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* TITLE */
+
+.title-container {
+    position: absolute;
+    right: 10%;
+    top: 40px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.title-container > .title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #0066FC;
+}
+.title-container > .subtitle {
+   font-size: 1.1em;
+   font-weight: bold;
+   color: #0066FC;   
+}
+
+/* STUB */
+
+.stub-container {
+    width: 500px;
+    top: 20%;
+    position: absolute;
+    left: 25%;
+    z-index: 2;
+    padding: 10px;
+}
+
+.stub-container > .title {
+    position: relative;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #0066FC;
+    z-index: 3;
+}
+
+.stub-container > .stub {
+    position: relative;
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #243487;  
+    z-index: 3;
+}
+
+.stub-container > .stub-background {
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* IMAGES */
+
+.bottle-image {
+    position:absolute;
+    left: 10%;
+    top: 20%;
+    z-index: 0;
+}
+
+.logo-image {
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
