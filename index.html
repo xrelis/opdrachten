@@ -2,69 +2,85 @@
 <head>
     <html lang="nl">
     <style>
-	
-	 </style>
+        .rooster {
+            border-spacing: 2px;
+            font-family: "Verdana";
+            font-size: 0.7em;
+        }
+
+        .rooster tr td:first-child {
+            font-weight: bold;
+        }
+    
+        .rooster > thead > tr > th, .rooster > tbody > tr > td {
+            padding: 6px;
+            background-color: #2ca0d8;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
-<div id="rooster">
-<table>
-<tr>
-<th></td>
-<th>8:00</th>
-<th>9:00</th>
-<th>10:00</th>
-<th>10:30</th>
-<th>11:30</th>
-<th>12:30</th>
-<th>13:00</th>
-<th>14:00</th>
-<th>15:00</th>
-<th>15:30</th>
-<th>16:30</th>
-<th>17:30</th>
-</tr>
-<tr>
-<th>Maandag</td>
-<td colspan="2">Project</td>
-<td rowspan="5">Pauze</td>
-<td>nederlands</td>
-<td>vormgeving</td>
-<td rowspan="5">pauze</td>
-<td>rekenen</td>
-<td>PhP</td>
-<td rowspan="5">pauze</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<th>dinsdag</td>
-<td colspan="2">project</td>
-<td>logica</td>
-<td>nederlands</td>
-</tr>
-<tr>
-<th>woensdag</td>
-<td colspan="5">vrij</td>
-<td>htmlt</td>
-<td>engels</td>
-<td>loopbaan</td>
-<td>slb</td>
-</tr>
-<tr>
-<th>donderdag</td>
-<td>loopbaan</td>
-<td>engels</td>
-<td colspan="2">project</td>
-<td>php</td>
-<td>html</td>
-</tr>
-<tr>
-<th>vrijdag</td>
-<td colspan="8">Rasto</td>
-</tr>
-</table>
-
-</div>
+    <div id="rooster">
+        <table class="rooster">
+            <thead>
+                <tr>
+                    <th>8:00</th>
+                    <th>9:00</th>
+                    <th>10:00</th>
+                    <th>10:30</th>
+                    <th>11:30</th>
+                    <th>12:30</th>
+                    <th>13:00</th>
+                    <th>14:00</th>
+                    <th>15:00</th>
+                    <th>15:30</th>
+                    <th>16:30</th>
+                    <th>17:30</th>
+                </tr>    
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maandag</td>
+                    <td colspan="2">Project</td>
+                    <td rowspan="4">Pauze</td>
+                    <td>nederlands</td>
+                    <td>vormgeving</td>
+                    <td rowspan="4">pauze</td>
+                    <td>rekenen</td>
+                    <td>PhP</td>
+                    <td rowspan="4">pauze</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Dinsdag</td>
+                    <td colspan="2">project</td>
+                    <td>logica</td>
+                    <td>nederlands</td>
+                </tr>
+                <tr>
+                    <td>Woensdag</td>
+                    <td colspan="2">vrij</td>
+                    <td>html</td>
+                    <td>engels</td>
+                    <td>loopbaan</td>
+                    <td>slb</td>
+                </tr>
+                <tr>
+                    <td>Donderdag</td>
+                    <td>loopbaan</td>
+                    <td>engels</td>
+                    <td colspan="2">project</td>
+                    <td>php</td>
+                    <td>html</td>
+                </tr>
+                <tr>
+                    <td>Vrijdag</td>
+                    <td colspan="11">Rasto</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
