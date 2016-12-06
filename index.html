@@ -1,48 +1,77 @@
 <html lang="nl">
 <head>
-    <html lang="nl">
-    <style>
-	li {
-		list-style-type: none;
+	<style>
+		body {
+			font-family: "Verdana"
 		}
-	
-	 </style>
+		li {
+			list-style-type: none;
+		}
+		.products-table > tbody > tr td input {
+			width: 30px;
+		}
+	</style>
 </head>
 <body>
-<div id="invulbox">
-	<from action="verwerken.php" method="get">
-	<p>naam<input type="text" name="naam"></p>
-	<p>email<input type="text" name="email"></p>
-	<p>telefoon<input type="telefoon" name="telefoon"></p>
-	<p>straatnaam<input type="text" name="straatnaam"></p>
-	<p>postcode<input type="postcode"></p>
-	<p>woonplaats<input type="woonplaats"></p>
-	<input type="submit" value="bevestigen">
-</form>
-	<div>
-	<h1>Bestel gegevens</h1> <h2>prijs</h2> <h3>aantal</h3>
-	<ol>
-		<li>Broodje kaas</li>
-		<li>broodje ham</li>
-		<li>broodje rosbief</li>
-		<li>Broodje halfom</li>
-		<li>Broodje filet american</li>
-		<li>Broodje kroket</li>
-		<li>Broodje frikandel</li>
-		<li>Broodje Hamburger</li>
-	</ol>
+	<div id="formulier">
+		<form action="verwerken.php" method="get">
+
+			<h1>Bestel gegevens</h1>
 	
-	<ol>
-		<li>1,75</li>
-		<li>1,75</li>
-		<li>1,75</li>
-		<li>1,75</li>
-		<li>1,75</li>
-		<li>1,75</li>
-		<li>1,75</li>
-		<li>1,75</li>
+			<table>
+				<tbody>
+					<tr>
+						<td><label>Naam</label></td>
+						<td><label>Straatnaam</label></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="naam"></td>
+						<td><input type="text" name="straatnaam"></td>
+					</tr>
+					<tr>
+						<td><label>Email</label></td>
+						<td><label>Postcode</label></td>
+					</tr>
+					<tr>
+						<td><input type="email" name="email"></td>
+						<td><input type="text" name="postcode"></td>
+					</tr>
+					<tr>
+						<td><label>Telefoon</label></td>
+						<td><label>Woonplaats</label></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="telefoon"></td>
+						<td><input type="text" name="Woonplaats"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<br><br>
+
+			<table class="products-table">
+				<thead>
+					<tr>
+						<th>Omschrijving</th>
+						<th>Prijs</th>
+						<th>Aantal</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Brooje Kaas</td>
+						<td>€ 1.75</td>
+						<td><input type="number" naam="broodjekaas"></td>
+					</tr>
+					<!-- MEER PRODUCTEN -->
+				</tbody>
+			</table>
+
+			<br><br>
+		
+			<input type="submit" name="verzenden" value="verzenden">
+
+		</form>
 	</div>
-	<input type="submit" value="verzenden">
-</div>
 </body>
 </html>
