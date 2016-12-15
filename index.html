@@ -1,77 +1,33 @@
+<!doctype html>
 <html lang="nl">
 <head>
-	<style>
-		body {
-			font-family: "Verdana"
-		}
-		li {
-			list-style-type: none;
-		}
-		.products-table > tbody > tr td input {
-			width: 30px;
-		}
+    <html lang="nl">
+    <style>
+	#achtergrond {
+	margin-top: 0%
+
+	}
+	#logo_cupcakes {
+	margin-left: 25%
+	}
+	#cupcakes {
+	
+	}
+	
 	</style>
 </head>
 <body>
-	<div id="formulier">
-		<form action="verwerken.php" method="get">
+<div id="logo_cupcakes">
+<img id="logo" src="assets/images/logo.png">
+</div>
+<div id="achtergrond_box">
+<img id="achtergrond" src="assets/images/achtergrond.png">
+</div>
+<div id="cupcakes_box">
+<img id="cupcakes" src="assets/images/cupcakes-slide.jpg">
+</div>
 
-			<h1>Bestel gegevens</h1>
-	
-			<table>
-				<tbody>
-					<tr>
-						<td><label>Naam</label></td>
-						<td><label>Straatnaam</label></td>
-					</tr>
-					<tr>
-						<td><input type="text" name="naam"></td>
-						<td><input type="text" name="straatnaam"></td>
-					</tr>
-					<tr>
-						<td><label>Email</label></td>
-						<td><label>Postcode</label></td>
-					</tr>
-					<tr>
-						<td><input type="email" name="email"></td>
-						<td><input type="text" name="postcode"></td>
-					</tr>
-					<tr>
-						<td><label>Telefoon</label></td>
-						<td><label>Woonplaats</label></td>
-					</tr>
-					<tr>
-						<td><input type="text" name="telefoon"></td>
-						<td><input type="text" name="Woonplaats"></td>
-					</tr>
-				</tbody>
-			</table>
 
-			<br><br>
 
-			<table class="products-table">
-				<thead>
-					<tr>
-						<th>Omschrijving</th>
-						<th>Prijs</th>
-						<th>Aantal</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Brooje Kaas</td>
-						<td>€ 1.75</td>
-						<td><input type="number" naam="broodjekaas"></td>
-					</tr>
-					<!-- MEER PRODUCTEN -->
-				</tbody>
-			</table>
-
-			<br><br>
-		
-			<input type="submit" name="verzenden" value="verzenden">
-
-		</form>
-	</div>
 </body>
 </html>
