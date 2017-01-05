@@ -1,61 +1,71 @@
-<body>
-<html lang="nl">
+<!DOCTYPE html>
+<html>
 <head>
 	<title>project website</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="assets/responsive/computer.css">
-	<link rel="stylesheet" type="text/css" href="assets/responsive/nexus.css">
-	<link rel="stylesheet" type="text/css" href="assets/responsive/iphone.css">
-		<style>
-	
-	li {
-		list-style-type: none;
-		float: left;
-		font-size: 28;
-		color: black;
-		padding: 25px;
-		margin-left: 100px;
-		margin-top: -80px;
-		border: 3px solid black;
-		
-	}
-	
-	
-	a:link {
-	color: black;
-	}
-	
-	a:visited {
-	color: red;
-	}
-	
-	a:active {
-	color: yellow;
-	}
-	
-	a:hover {
-	color: blue;
-	}
-	.logo {
-		margin-left:1175px;
-		margin-top:-175px;
-	}
-	
-	
+	<style>
+
+		html {
+			font-family: sans-serif; /* 1 */
+			line-height: 1.15; /* 2 */
+			-ms-text-size-adjust: 100%; /* 3 */
+			-webkit-text-size-adjust: 100%; /* 3 */
+		}
+
+		body, * {
+			margin: 0;
+			padding: 0;
+		}
+
+		.menu-container {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			height: 60px;
+			background-color: #333;
+			text-align: center;
+		}
+
+		ul.menu {
+			list-style: none;
+		}
+
+		ul.menu > li {
+			float: left;
+			color: white;
+			cursor: pointer;
+			transition: all 0.2s ease;
+		}
+
+		ul.menu > li:hover {
+			background-color: white;
+		}
+
+		ul.menu > li > a {
+			text-decoration: none;
+			line-height: 60px;
+			padding: 0 15px 0 15px;
+			color: white;
+			transition: all 0.2s ease;
+		}
+
+		ul.menu > li:hover > a {
+			color: #333;
+		}
 	
 	</style>
 </head>
 <body>
-<img class="logo" src="assets/clean eat fresh logo.png" "width=500px height=500px">
-<div class="links">
-	<li>
-		<li><a href="home">home</li>
-		<li><a href="over ons">Over ons</li>
-		<li><a href="menu">Menu</li>
-		<li><a href="catering">Catering</li>
-		<li><a href="vind ons">vind ons</li>
-		<li><a href="gallery">gallery</li>
-	</li>	
-</div>
+	<div class="menu-container">
+		<ul class="menu">
+	        <li><a href="home">home</a></li>
+	        <li><a href="over ons">over ons</a></li>
+	        <li><a href="menu">menu</a></li>
+	        <li><a href="catering">catering</a></li>
+	        <li><a href="vind ons">vind ons</a></li>
+	        <li><a href="gallery">gallery</a></li>
+	    </ul>   
+    </div>
 </body>
 </html>
